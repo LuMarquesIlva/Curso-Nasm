@@ -1,0 +1,4 @@
+-- Números Hexadecimais --
+
+Os números hexadecimais são representados por letras e números, esses sendo de 0 a 9, e de A a F, sendo A
+representado por 10, B por 11, C por 12, D por 13, E por 14 e F por 15.

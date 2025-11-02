@@ -1,7 +1,7 @@
 -- Adições Binárias --
 
                 1
-0 + 0 = 0       0 1 1 0 -> 6  Porque são números binários, após o número passar de 1, o número é adicionado à
+0 + 0 = 0       0 1 1 0 -> 6  Porque são números binários, após o número passar de 1, o número é carregado
 0 + 1 = 1     + 0 1 0 0 -> 4  esquerda.
 1 + 0 = 1       -------
 1 + 1 = 10      1 0 1 0 -> 10
@@ -18,7 +18,7 @@ exemplo:
     0000 0000 = 1 Bytes
     0000 0000 0000 0000 = 2 Bytes
 
-Tendo isso em mente, a forma que representamos um número assinao "signed" um número negativo ou positivo, o
+Tendo isso em mente, a forma que representamos um número assinado "signed" um número negativo ou positivo, o
 o que está acontecendo é que se o número for negativo, o primeiro bit será 1, enquanto que se for positivo, o primeiro bit será 0.
 
 Exemplo:
@@ -37,3 +37,16 @@ Exemplo:
     1000 0100 <- -4
 
 Por causa disso, quando fazemos uma subração binária, utilizamos o que é conhecido como "Complemento de Dois",
+o qual invertemos todos os bits, ou seja, 1 vira 0, e 0 vira 1, após isso somamos os valores.
+
+Exemplo:
+
+    0000 0010 <- -2
+    1111 1101 <- 253
+   +        1
+    ---------
+    1111 11
+    1111 1110 <- 254
+    0000 0010 <- -2
+    ---------
+    0000 0000 <- 0
