@@ -1,6 +1,39 @@
 -- Adições Binárias --
 
-0 + 0 = 0
-0 + 1 = 1
-1 + 0 = 1
-1 + 1 = 10
+                1
+0 + 0 = 0       0 1 1 0 -> 6  Porque são números binários, após o número passar de 1, o número é adicionado à
+0 + 1 = 1     + 0 1 0 0 -> 4  esquerda.
+1 + 0 = 1       -------
+1 + 1 = 10      1 0 1 0 -> 10
+
+-- Números Binários Assinados --
+
+Números binários são compostos essencialmente por 4 dígitos, isso acontece porque um endereço de memória também
+é composto por 4 "dígitos", ou seja, 4 bits que formam um byte.
+
+1 Bit = 0
+1 Byte = 8 Bits = 0000 0000
+
+exemplo:
+    0000 0000 = 1 Bytes
+    0000 0000 0000 0000 = 2 Bytes
+
+Tendo isso em mente, a forma que representamos um número assinao "signed" um número negativo ou positivo, o
+o que está acontecendo é que se o número for negativo, o primeiro bit será 1, enquanto que se for positivo, o primeiro bit será 0.
+
+Exemplo:
+    1000 0010 = -2   Nesse exemplo, o primeiro bit é usado para representar um número negativo ou positivo
+    0000 0010 = 2    enquanto os outros bits são usados para representar o valor do número em si.
+
+Mas diferente da regra da matemática que diz que (- - = +) e (- + = -), em subtração binária, o resultado é
+sempre adicionado
+
+Exemplo:
+
+          1
+    1000 0010 <- -2
+   +0000 0010 <-  2
+    ---------
+    1000 0100 <- -4
+
+Por causa disso, quando fazemos uma subração binária, utilizamos o que é conhecido como "Complemento de Dois",
