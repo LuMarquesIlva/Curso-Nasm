@@ -5,4 +5,4 @@ Esse é um curso de **Assembly x86** o qual eu segui, o curso original é [esse 
 ***
 
 Eu antes de fazer o curso
-![Image](https://ibb.co/7JCQdTTv)
+![Image](https://i.ibb.co/7JCQdTTv/RDT-20250828-0011466977886550462980005.webp)
